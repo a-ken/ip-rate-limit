@@ -1,0 +1,10 @@
+{
+    "restartable": "rs",
+    "watch": [
+        "src"
+    ],
+    "env": {
+    },
+    "ext": "ts",
+    "exec": "npx ts-node -r tsconfig-paths/register src/app.ts"
+}
