@@ -19,6 +19,7 @@
     "@types/koa-logger": "^3.1.1",
     "@types/redis": "^2.8.7",
     "cross-env": "^5.2.0",
+    "moment": "^2.22.2",
     "nodemon": "^1.18.4",
     "rimraf": "^2.6.2",
     "ts-node": "^7.0.1",
