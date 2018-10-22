@@ -7,7 +7,8 @@
     "clean": "npx rimraf ./dist/*",
     "build": "npx npm run clean && npx tsc",
     "start:dev": "npx nodemon",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/app.js",
+    "simple:test": "npx ts-node test/test.ts" 
   },
   "keywords": [],
   "author": "aken1104@gmail.com",
