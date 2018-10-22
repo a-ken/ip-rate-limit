@@ -5,7 +5,7 @@ interface CheckingResult {
     ip: string;
     status: number;
     times: number;
-    reset: number; // timestamp
+    reset: number; // unix timestamp
     message: string;
 }
 
@@ -35,7 +35,7 @@ export class IpRateLimiterService {
             result.times = Number(times);
             result.reset = timestamp;
         } else {
-            let timestamp = moment().add(1, 'minutes').toDate().getTime();
+            let timestamp = moment().add(1, 'minutes').unix();
 
             await clientAsync.HSET(ip, COLUMN_TIMES, '1');
             await clientAsync.HSET(ip, COLUMN_TIMESTAMP, timestamp);
