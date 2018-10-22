@@ -15,7 +15,7 @@
 - Node.js ^8.0
 - Redis ^4.0
 
-### 下載專案及套件安裝
+### 下載專案及套件安裝
 
 ```shell
 > mkdir ~/dev && cd ~/dev
@@ -37,7 +37,7 @@ NODE_ENV=development
 PORT=5000
 PROXY=false
 
-REDIS_HOST=<ip or hostname>
+REDIS_HOST=<ip or hostname>
 REDIS_PORT=6379
 ```
 
@@ -70,7 +70,7 @@ NODE_ENV=development
 PORT=5000
 PROXY=false
 
-REDIS_HOST=redis
+REDIS_HOST=redis
 REDIS_PORT=6379
 ```
 
