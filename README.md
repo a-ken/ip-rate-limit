@@ -79,3 +79,24 @@ REDIS_PORT=6379
 ```shell
 > docker-compose up
 ```
+
+## 測試
+
+### 複製 Example TEST 環境變數
+
+```shell
+> cp .example.env.test .env.test
+```
+
+### 設定環境變數 .env.test
+
+```
+CLIENT_IP=<your client ip>
+SERVER=<remote api server ip or hostname>
+```
+
+### 執行測試
+
+```shell
+> npm run simple:test
+```
