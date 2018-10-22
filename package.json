@@ -2,11 +2,12 @@
   "name": "ip-rate-limit",
   "version": "0.1.0",
   "description": "",
-  "main": "./dist/app.ts",
+  "main": "./dist/app.js",
   "scripts": {
     "clean": "npx rimraf ./dist/*",
-    "build": "npx npm run clean && tsc",
-    "start": "npx nodemon"
+    "build": "npx npm run clean && npx tsc",
+    "start:dev": "npx nodemon",
+    "start": "node ./dist/app.js"
   },
   "keywords": [],
   "author": "aken1104@gmail.com",
